@@ -1,0 +1,56 @@
+i {
+  margin: 1rem;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+}
+.drop-down {
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0.537);
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.drop-down.open {
+  width: 300px;
+  height: 100%;
+}
+
+li,
+.fa-xmark {
+  /* color: #818181; */
+  color: white;
+}
+.fa-xmark {
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  position: sticky;
+  top: 10px;
+  margin-left: auto;
+}
+li {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  /* color: #818181; */
+  color: white;
+  display: block;
+  transition: 0.3s;
+  padding-top: 4rem;
+  cursor: pointer;
+}
+li:hover {
+  color: #816565;
+}
+.fa-xmark:hover {
+  color: #816565;
+}
+.fa-bars {
+  color: rgba(49, 30, 30, 0.612);
+}
